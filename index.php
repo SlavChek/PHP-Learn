@@ -13,7 +13,6 @@ $user_avatar = 'img/user.jpg';
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-
         <header class="main-header">
             <div class="main-header__container container">
                 <h1 class="visually-hidden">YetiCave</h1>
@@ -25,7 +24,6 @@ $user_avatar = 'img/user.jpg';
                     <input class="main-header__search-btn" type="submit" name="find" value="Найти">
                 </form>
                 <a class="main-header__add-lot button" href="add-lot.html">Добавить лот</a>
-
                 <nav class="user-menu">
                     <!-- Реализован показ кода HTML кода по условию if else -->
                     <?php if ($is_auth == true): ?>
@@ -36,7 +34,7 @@ $user_avatar = 'img/user.jpg';
                         <!-- конструкция с равно является аналогом функции print() -->
                         <p><?= $user_name?></p>
                     </div>
-                    <?php else :?>
+                <?php else :?>
                     <ul class="user-menu__list">
                         <li class="user-menu__item">
                             <a href="#">Регистрация</a>
@@ -50,7 +48,6 @@ $user_avatar = 'img/user.jpg';
                 </nav>
             </div>
         </header>
-
         <main class="container">
             <section class="promo">
                 <h2 class="promo__title">Нужен стафф для катки?</h2>
@@ -103,7 +100,6 @@ $user_avatar = 'img/user.jpg';
                 </ul>
             </section>
         </main>
-
         <footer class="main-footer">
             <nav class="nav">
                 <ul class="nav__list container">
@@ -172,6 +168,5 @@ $user_avatar = 'img/user.jpg';
                 </div>
             </div>
         </footer>
-
     </body>
 </html>

@@ -1,5 +1,4 @@
 /* Шрифты */
-
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff");
@@ -29,7 +28,6 @@
 }
 
 /* Общее */
-
 body {
   min-width: 1140px;
   background-color: #dbe6e9;
@@ -120,7 +118,6 @@ h2 {
 }
 
 /* Хедер */
-
 .main-header {
   padding: 30px 0 29px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -174,7 +171,7 @@ h2 {
   opacity: 0.4;
 }
 
-.main-header__search input[type="search"]:hover + .main-header__search-btn {
+.main-header__search input[type="search"]:hover+.main-header__search-btn {
   opacity: 0.4;
 }
 
@@ -214,7 +211,6 @@ h2 {
 }
 
 /**/
-
 .user-menu {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -259,7 +255,6 @@ h2 {
 }
 
 /* Футер */
-
 .main-footer {
   margin-top: 120px;
   background-color: #ffffff;
@@ -344,7 +339,6 @@ h2 {
 }
 
 /* Навигация */
-
 .nav {
   background-color: #ffffff;
   border-bottom: 1px solid #e1e6e7;
@@ -403,7 +397,6 @@ h2 {
 }
 
 /* Главная. Промо блок */
-
 .promo {
   padding: 58px 0 35px;
   background: url("../img/promo-bg.png") 3px 17px no-repeat;
@@ -509,7 +502,6 @@ h2 {
 }
 
 /* Список лотов */
-
 .lots {
   padding-top: 50px;
 }
@@ -669,7 +661,6 @@ h2 {
 }
 
 /* Пагинация */
-
 .pagination-list {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -724,7 +715,6 @@ h2 {
 }
 
 /* Форма Регистрация + Добавление лота */
-
 .form {
   padding-top: 51px;
 }
@@ -824,7 +814,7 @@ h2 {
   color: #f84646;
 }
 
-input:invalid .form__error{
+input:invalid .form__error {
   display: block;
 }
 
@@ -915,7 +905,6 @@ input:invalid .form__error{
 }
 
 /* Страница лота */
-
 .lot-item {
   padding-top: 50px;
 }
@@ -1059,7 +1048,6 @@ input:invalid .form__error{
 }
 
 /* История ставок */
-
 .history {
   margin-top: 34px;
 }
@@ -1100,7 +1088,6 @@ input:invalid .form__error{
 }
 
 /* Мои ставки */
-
 .rates {
   padding-top: 50px;
 }
