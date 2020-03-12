@@ -137,14 +137,14 @@ $products = [
         <footer class="main-footer">
             <nav class="nav">
                 <ul class="nav__list container">
-                    <!-- Выводим список категорий с помощью цикла foreach -->
+                    <!-- Выводим список категорий с помощью цикла foreach и массива -->
                     <?php foreach ($categories as $value): ?>
                     <li class="nav__item">
                         <a href="all-lots.html"><?=$value;?></a>
                     </li>
                     <!-- <li class="nav__item"> <a href="all-lots.html">Крепления</a> </li> <li class="nav__item"> <a href="all-lots.html">Ботинки</a> </li> <li class="nav__item"> <a href="all-lots.html">Одежда</a> </li> <li class="nav__item"> <a
                     href="all-lots.html">Инструменты</a> </li> <li class="nav__item"> <a href="all-lots.html">Разное</a> </li> -->
-                    <!-- Выводим список категорий с помощью цикла foreach -->
+                    <!-- Выводим список категорий с помощью цикла foreach и массива-->
                     <?php endforeach; ?>
                 </ul>
             </nav>
