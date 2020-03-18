@@ -4,8 +4,11 @@ $is_auth = (bool) rand(0, 1);
 $user_name = 'Константин';
 $user_avatar = 'img/user.jpg';
 
+/* массив с катигориями товаров */
 $categories = ['Доски и лыжи', 'Крепления', 'Ботинки', 'Одежда', 'Инструменты', 'Разное'];
+/* массив с катигориями товаров ^ */
 
+ /* массив с продукцией */
 $products = [
     ['title' => '2014 Rossignol Distroct snowboard',
      'category' => $categories[0],
@@ -32,6 +35,23 @@ $products = [
       'cost' => 5400,
       'url' => 'img/lot-6.jpg']
    ];
+   /* массив с продукцией ^ */
+
+/* Функция форматирования цены и добавления знака рудля*/
+   function cost_format ($cost)
+{
+    if ($cost > 1000) {
+        $cost = number_format($cost, 0 ,' ',' ');
+    } else { $cost = (ceil($cost));}
+
+    $cost .= ' &#8381';
+
+    return $cost;
+}
+
+$costs = cost_format($products[0]['cost']);
+/* Функция форматирования цены и добавления знака рудля ^*/
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -121,8 +141,11 @@ $products = [
                             <div class="lot__state">
                                 <div class="lot__rate">
                                     <span class="lot__amount">Стартовая цена</span>
-                                    <span class="lot__cost"><?=$value['cost']?>
+                                    <!--Вызов функции форматирования цены-->
+                                    <span class="lot__cost"><?= cost_format($value['cost'])?>
+                                        <!--Вызов функции форматирования цены-->
                                         <b class="rub">р</b>
+                                        <!--visibility: hidden;-->
                                     </span>
                                 </div>
                                 <div class="lot__timer timer"></div>

@@ -115,6 +115,7 @@ h2 {
   font-size: 0;
   vertical-align: baseline;
   background: url("../img/rub.svg") 0 0 no-repeat;
+  visibility: hidden;
 }
 
 /* Хедер */
