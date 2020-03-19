@@ -37,8 +37,11 @@ $products = [
    ];
    /* массив с продукцией ^ */
 
+   /* Подключаем страницу с функциями */
 require_once ('functions.php');
+    /* Подключаем страницу с функциями ^ */
 
+    /* Передаём информацию для шаблонизатора */
 $page_content = renderTemplate('index.php', ['products' => $products, 'categories' => $categories] );
 $layout_content = renderTemplate('layout.php',
         [
@@ -50,4 +53,5 @@ $layout_content = renderTemplate('layout.php',
             'user_avatar' => 'img/user.jpg'
         ]);
     print($layout_content);
+    /* Передаём информацию для шаблонизатора */
 ?>
