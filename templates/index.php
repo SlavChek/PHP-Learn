@@ -49,7 +49,7 @@
                                 <!--visibility: hidden;-->
                             </span>
                         </div>
-                        <div class="lot__timer timer"></div>
+                        <div class="lot__timer timer"><?= lotLifeTime(); ?></div>
                     </div>
                 </div>
             </li>

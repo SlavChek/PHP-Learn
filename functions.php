@@ -47,4 +47,11 @@ function str($str) {
 	return $text;
 }
 /* Функции для фильтрации вводимых и выводимых данных против XSS Атак ^ */
+
+function lotLifeTime () {
+        $current_date = date_create("now");
+        $limit_date = date_create("tomorrow midnight");
+
+        return date_interval_format(date_diff($current_date, $limit_date), "%H:%I");
+    }
 ?>

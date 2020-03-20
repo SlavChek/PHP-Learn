@@ -1,4 +1,6 @@
 <?php
+date_default_timezone_set("Europe/Samara");
+
 $is_auth = (bool) rand(0, 1);
 
 $user_name = 'Константин';
@@ -54,4 +56,7 @@ $layout_content = renderTemplate('layout.php',
         ]);
     print($layout_content);
     /* Передаём информацию для шаблонизатора */
+
+
+
 ?>
