@@ -9,7 +9,6 @@
     </head>
     <body>
         <header class="main-header">
-
             <div class="main-header__container container">
                 <h1 class="visually-hidden">YetiCave</h1>
                 <a class="main-header__logo">

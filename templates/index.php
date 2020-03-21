@@ -4,9 +4,11 @@
         <p class="promo__text">На нашем интернет-аукционе ты найдёшь самое эксклюзивное сноубордическое и горнолыжное снаряжение.</p>
         <ul class="promo__list">
             <?php foreach ($categories as $value):?>
+            <!--Реализация показа лотов с помощью цикла foreach и двумерного асоциативного массива-->
             <li class="promo__item <?= $value['image']?>">
                 <a class="promo__link" href="all-lots.html"><?= $value['title']?></a>
             </li>
+            <!--Реализация показа лотов с помощью цикла foreach и двумерного асоциативного массива ^ -->
             <?php endforeach;?>
             <!--<li class="promo__item promo__item--attachment"> <a class="promo__link" href="all-lots.html">Крепления</a> </li> <li class="promo__item promo__item--boots"> <a class="promo__link" href="all-lots.html">Ботинки</a> </li> <li class="promo__item
             promo__item--clothing"> <a class="promo__link" href="all-lots.html">Одежда</a> </li> <li class="promo__item promo__item--tools"> <a class="promo__link" href="all-lots.html">Инструменты</a> </li> <li class="promo__item promo__item--other"> <a
@@ -34,7 +36,7 @@
                             <span class="lot__amount">Стартовая цена</span>
                             <!--Вызов функции форматирования цены-->
                             <span class="lot__cost"><?= str(cost_format($value['cost']))?>
-                                <!--Вызов функции форматирования цены-->
+                                <!--Вызов функции форматирования цены ^ -->
                                 <b class="rub">р</b>
                                 <!--visibility: hidden;-->
                             </span>
@@ -44,7 +46,7 @@
                 </div>
             </li>
             <?php endforeach?>
-            <!--Реализация показа лотов с помощью цикла foreach и двумерного асоциативного массива-->
+            <!--Реализация показа лотов с помощью цикла foreach и двумерного асоциативного массива ^-->
         </ul>
     </section>
 </main>
