@@ -1,8 +1,9 @@
 <?php
 
-/* Подключенны массивы с категориями */
+/* Подключение сценариев */
 require ('data_lots.php');
-/* Подключенны массивы с категориями ^ */
+require ('functions.php');
+/* Подключение сценариев ^ */
 
 /* Идентификатор лота */
 $id = $_GET['id'];
@@ -94,12 +95,12 @@ if (!$products[$id]) {
       <div class="lot-item__right">
         <div class="lot-item__state">
           <div class="lot-item__timer timer">
-            10:54:12
+            <?= lotLifeTime(); ?>
           </div>
           <div class="lot-item__cost-state">
             <div class="lot-item__rate">
               <span class="lot-item__amount">Текущая цена</span>
-              <span class="lot-item__cost">10 999</span>
+              <span class="lot-item__cost"><?=cost_format($products[$id]['cost'])?></span>
             </div>
             <div class="lot-item__min-cost">
               Мин. ставка <span>12 000 р</span>
