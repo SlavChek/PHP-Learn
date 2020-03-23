@@ -29,7 +29,9 @@
                 <div class="lot__info">
                     <span class="lot__category"><?=esc($value['category'])?></span>
                     <h3 class="lot__title">
-                        <a class="text-link" href="lot.html"><?=esc($value['title'])?></a>
+                        <!-- Реализован переход по ссылкам используя ID массива -->
+                        <a class="text-link" href="lot.php?id=<?= $key; ?>"><?=esc($value['title'])?></a>
+                        <!-- Реализован переход по ссылкам используя ID массива ^ -->
                     </h3>
                     <div class="lot__state">
                         <div class="lot__rate">
