@@ -32,6 +32,4 @@ $layout_content = renderTemplate('layout.php',
     print($layout_content);
     /* Передаём информацию для шаблонизатора */
 
-
-
 ?>

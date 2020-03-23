@@ -7,7 +7,7 @@ require ('data_lots.php');
 /* Идентификатор лота */
 $id = $_GET['id'];
 if (!$products[$id]) {
-    header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
+    header($_SERVER['SERVER_PROTOCOL'] . ' 404 Ого что - то идет не поплану!!');
     exit;
 }
 /* Идентификатор лота ^ */
