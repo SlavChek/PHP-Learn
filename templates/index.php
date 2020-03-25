@@ -5,7 +5,7 @@
         <ul class="promo__list">
             <?php foreach ($categories as $value):?>
             <!--Реализация показа лотов с помощью цикла foreach и двумерного асоциативного массива-->
-            <li class="promo__item <?= $value['image']?>">
+            <li class="promo__item <?= $value['c_style']?>">
                 <a class="promo__link" href="all-lots.html"><?= $value['title']?></a>
             </li>
             <!--Реализация показа лотов с помощью цикла foreach и двумерного асоциативного массива ^ -->
@@ -24,7 +24,7 @@
             <?php foreach ($products as $key => $value): ?>
             <li class="lots__item lot">
                 <div class="lot__image">
-                    <img src="<?=esc($value['url'])?>" width="350" height="260" alt="Сноуборд">
+                    <img src="<?=esc($value['u_image'])?>" width="350" height="260" alt="Сноуборд">
                 </div>
                 <div class="lot__info">
                     <span class="lot__category"><?=esc($value['category'])?></span>

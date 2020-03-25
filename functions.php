@@ -1,5 +1,9 @@
 <?php
-/* Функция форматирования цены и добавления знака рудля*/
+/* Устанавливаем временную зону*/
+date_default_timezone_set("Europe/Samara");
+/* Устанавливаем временную зону ^ */
+
+/* Функция форматирования цены и добавления знака рубля*/
    function cost_format ($cost)
 {
     if ($cost > 1000) {
@@ -11,7 +15,7 @@
     return $cost;
 }
 
-/* Функция форматирования цены и добавления знака рудля ^ */
+/* Функция форматирования цены и добавления знака рубля ^ */
 
 /* Функция для шаблонизации динамического контента */
 function renderTemplate ($name, $data) {
@@ -32,14 +36,14 @@ function renderTemplate ($name, $data) {
 /* Функция для шаблонизации динамического контента ^ */
 
 /* Функции для фильтрации вводимых и выводимых данных против XSS Атак*/
-/* Выводит как есть*/
+// Выводит как есть
 function esc($str) {
 
 	$text = htmlspecialchars($str);
 
 	return $text;
 }
-/*Скрывает теги*/
+//Скрывает теги
 function str($str) {
 
 	$text = strip_tags($str);
@@ -47,6 +51,7 @@ function str($str) {
 	return $text;
 }
 /* Функции для фильтрации вводимых и выводимых данных против XSS Атак ^ */
+
 /* Функция таймер времени до закрытия лота */
 function lotLifeTime () {
         $current_date = date_create("now");
@@ -55,4 +60,6 @@ function lotLifeTime () {
         return date_interval_format(date_diff($current_date, $limit_date), "%H:%I");
     }
 /* Функция таймер времени до закрытия лота ^ */
+
+
 ?>

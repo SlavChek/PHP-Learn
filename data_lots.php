@@ -2,17 +2,17 @@
 /* массив с категориями товаров и их изображений */
 $categories = [
     ['title' => 'Доски и лыжи',
-     'image' => 'promo__item--boards'],
+     'c_style' => 'promo__item--boards'],
     ['title' => 'Крепления',
-     'image' => 'promo__item--attachment'],
+     'c_style' => 'promo__item--attachment'],
     ['title' => 'Ботинки',
-     'image' => 'promo__item--boots'],
+     'c_style' => 'promo__item--boots'],
     ['title' => 'Одежда',
-     'image' => 'promo__item--clothing'],
+     'c_style' => 'promo__item--clothing'],
     ['title' => 'Инструменты',
-     'image' => 'promo__item--tools'],
+     'c_style' => 'promo__item--tools'],
     ['title' => 'Разное',
-     'image' => 'promo__item--other']
+     'c_style' => 'promo__item--other']
 ];
 /* массив с категориями товаров и их изображений ^ */
 
@@ -21,27 +21,33 @@ $products = [
     ['title' => '2014 Rossignol Distroct snowboard',
      'category' => $categories[0]['title'],
      'cost' => 10999,
-     'url' => 'img/lot-1.jpg'],
+     'u_image' => 'img/lot-1.jpg',
+     'description' => 'Описание замело метелями'],
      ['title' => 'DC Ply Mens 2016/2017 Snowboard',
       'category' => $categories[0]['title'],
       'cost' => 159999,
-      'url' => 'img/lot-2.jpg'],
+      'u_image' => 'img/lot-2.jpg',
+      'description' => 'Описание замело метелями'],
      ['title' => 'Крепления Union Contact Pro 2015 года, размер L/XL',
       'category' => $categories[1]['title'],
       'cost' => 8000,
-      'url' => 'img/lot-3.jpg'],
+      'u_image' => 'img/lot-3.jpg',
+      'description' => 'Описание замело метелями'],
      ['title' => 'Ботинки для сноуборда DC Mutiny Charocal',
       'category' => $categories[2]['title'],
       'cost' => 10999,
-      'url' => 'img/lot-4.jpg'],
+      'u_image' => 'img/lot-4.jpg',
+      'description' => 'Описание замело метелями'],
      ['title' => 'Куртка для сноуборда DC Mutiny Charocal',
       'category' => $categories[3]['title'],
       'cost' => 7500,
-      'url' => 'img/lot-5.jpg'],
+      'u_image' => 'img/lot-5.jpg',
+      'description' => 'Описание замело метелями'],
      ['title' => 'Маска Oakley Canopy',
       'category' => $categories[5]['title'],
       'cost' => 5400,
-      'url' => 'img/lot-6.jpg']
+      'u_image' => 'img/lot-6.jpg',
+      'description' => 'Описание замело метелями']
    ];
    /* массив с продукцией ^ */
  ?>

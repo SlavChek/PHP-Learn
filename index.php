@@ -17,9 +17,10 @@ require_once ('functions.php');
 require_once ('data_lots.php');
     /* Подключенны массивы с категориями ^ */
 
+require ('global_var.php');
 
     /* Передаём информацию для шаблонизатора */
-$page_content = renderTemplate('index.php', ['products' => $products, 'categories' => $categories] );
+$page_content = renderTemplate('index.php', ['products' => $products, 'categories' => $categories,] );
 $layout_content = renderTemplate('layout.php',
         [
             'main' => $page_content,
@@ -27,7 +28,8 @@ $layout_content = renderTemplate('layout.php',
             'categories' => $categories,
             'is_auth' => $is_auth,
             'user_name' => $user_name,
-            'user_avatar' => 'img/user.jpg'
+            'user_avatar' => 'img/user.jpg',
+            'add_lot' => $add_lot
         ]);
     print($layout_content);
     /* Передаём информацию для шаблонизатора */

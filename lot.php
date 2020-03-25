@@ -1,8 +1,9 @@
 <?php
 
 /* Подключение сценариев */
-require ('data_lots.php');
-require ('functions.php');
+require_once ('data_lots.php');
+require_once ('functions.php');
+require_once ('global_var.php');
 /* Подключение сценариев ^ */
 
 /* Идентификатор лота */
@@ -30,14 +31,14 @@ if (!$products[$id]) {
         <header class="main-header">
             <div class="main-header__container container">
                 <h1 class="visually-hidden">YetiCave</h1>
-                <a class="main-header__logo" href="index.html">
+                <a class="main-header__logo" href="<?= $href_logo?>">
                     <img src="img/logo.svg" width="160" height="39" alt="Логотип компании YetiCave">
                 </a>
                 <form class="main-header__search" method="get" action="https://echo.htmlacademy.ru">
                     <input type="search" name="search" placeholder="Поиск лота">
                     <input class="main-header__search-btn" type="submit" name="find" value="Найти">
                 </form>
-                <a class="main-header__add-lot button" href="add-lot.html">Добавить лот</a>
+                <a class="main-header__add-lot button" href="<?= $add_lot ?>">Добавить лот</a>
                 <nav class="user-menu">
                     <ul class="user-menu__list">
                         <li class="user-menu__item">
@@ -68,13 +69,11 @@ if (!$products[$id]) {
                 <div class="lot-item__content">
                     <div class="lot-item__left">
                         <div class="lot-item__image">
-                            <img src=<?= $products[$id]['url'] ?> width="730" height="548" alt="Сноуборд">
+                            <img src=<?= $products[$id]['u_image'] ?> width="730" height="548" alt="Сноуборд">
                         </div>
                         <p class="lot-item__category">Категория:
                             <span><?= $products[$id]['category'] ?></span></p>
-                        <p class="lot-item__description">Легкий маневренный сноуборд, готовый дать жару в любом парке, растопив снег мощным щелчкоми четкими дугами. Стекловолокно Bi-Ax, уложенное в двух направлениях, наделяет этот снаряд отличной гибкостью и отзывчивостью,
-                            а симметричная геометрия в сочетании с классическим прогибом кэмбер позволит уверенно держать высокие скорости. А если к концу катального дня сил совсем не останется, просто посмотрите на Вашу доску и улыбнитесь, крутая графика от Шона Кливера еще
-                            никого не оставляла равнодушным.</p>
+                        <p class="lot-item__description"><?= $products[$id]['description'] ?></p>
                     </div>
                     <div class="lot-item__right">
                         <div class="lot-item__state">
